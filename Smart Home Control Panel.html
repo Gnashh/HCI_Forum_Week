@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="JStest.js"></script>
+</head>
+<body>
+
+  <div class="header" id="Top">
+    <h1>Smart Home Control Panel</h1>
+    <span style = "font-size:30px; cursor:pointer; color:whitesmoke " onclick="openNav()">&#9776;</span>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#Lightings">Lightings</a>
+      <a href="#Security">Security</a>
+      <a href="#Camera">Camera</a>
+      <a href="#Other">Other</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="column">
+      <div class="column" id="Lightings">
+     <h2 style="text-align: center;">Lightings</h2>
+     <div class="toggle">
+       <div class="toggle-content">
+         <h4>Bedroom</h4>
+         <input type="checkbox" id="check">
+         <label for="check" class="button"></label>
+       </div>
+     </div>
+     <div class="toggle">
+       <div class="toggle-content">
+         <h4>Kitchen</h4>
+         <input type="checkbox" id="check2">
+         <label for="check2" class="button"></label>
+       </div>
+     </div>
+     <div class="toggle">
+       <div class="toggle-content">
+         <h4>Living room</h4>
+         <input type="checkbox" id="check3">
+         <label for="check3" class="button"></label>
+       </div>
+     </div>
+     <div class="toggle">
+       <div class="toggle-content">
+         <h4>Bathroom</h4>
+         <input type="checkbox" id="check4">
+         <label for="check4" class="button"></label>
+       </div>
+     </div>
+     <div class="toggle">
+       <div class="toggle-content">
+         <h4>Bedroom</h4>
+         <input type="checkbox" id="check5">
+         <label for="check5" class="button"></label>
+       </div>
+     </div>
+  </div>
+  </div>
+  
+    <div class="column">
+         <div class="column" id="Security">
+        <h2 style="text-align: center;">Security</h2>
+        <div class="toggle">
+          <div class="toggle-content">
+            <h4>Frontdoor</h4>
+            <input type="checkbox" id="sc_check" onclick="updateProgressBar()">
+            <label for="sc_check" class="button"></label>
+          </div>
+        </div>
+        <div class="toggle">
+          <div class="toggle-content">
+            <h4>Backdoor</h4>
+            <input type="checkbox" id="sc_check2" onclick="updateProgressBar()">
+            <label for="sc_check2" class="button"></label>
+          </div>
+        </div>
+        <div class="toggle">
+          <div class="toggle-content">
+            <h4>Front Window</h4>
+            <input type="checkbox" id="sc_check3" onclick="updateProgressBar()">
+            <label for="sc_check3" class="button"></label>
+          </div>
+        </div>
+        <br>
+        <h3>Secure level :</h3>
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="column">
+      <div class="column"id="Camera">
+        <h2 style="text-align: center;">Camera</h2>
+        <div class="random">
+          <div class="button-container">
+          <button class="btn" onclick="changeimage()"></button>
+          <p> Garage</p>
+        </div>
+        <div class="button-container">
+          <button class="btn" onclick="changeimage()"></button>
+          <p>Front Porch</p>
+        </div>
+        <div class="button-container">
+          <button class="btn" onclick="changeimage()"></button>
+          <p>Doorbell</p>
+        </div>
+        </div>
+        <img id="myImage" src="blank.jpg" alt="Initial Image">
+      </div>
+    </div>
+
+
+  <div class="column">
+    <div class="column"id="Other">
+      <h2 style="text-align: center;">Other</h2>
+        <div class="toggle">
+          <div class="toggle-content">
+            <h4>Gaming Setup</h4>
+              <input type="checkbox" id="O.check">
+              <label for="O.check" class="button"></label>
+          </div>
+        </div>
+        <div class="toggle">
+          <div class="toggle-content">
+            <h4>Sprinkler</h4>
+              <input type="checkbox" id="O.check2">
+              <label for="O.check2" class="button"></label>
+          </div>
+        </div>
+        <div class="toggle">
+          <div class="toggle-content">
+            <h4>Kitchen fan</h4>
+              <input type="checkbox" id="O.check3">
+              <label for="O.check3" class="button"></label>
+          </div>
+        </div>
+        <div class="toggle">
+          <div class="toggle-content">
+            <h4>AC Livingroom</h4>
+              <input type="checkbox" id="O.check4">
+              <label for="O.check4" class="button"></label>
+          </div>
+        </div>
+        <div class="toggle">
+          <div class="toggle-content">
+            <h4>AC Bedroom</h4>
+              <input type="checkbox" id="O.check5">
+              <label for="O.check5" class="button"></label>
+          </div>
+      </div>
+  </div>
+  </body>
+  </html>
+  
